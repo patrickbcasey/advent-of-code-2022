@@ -3,6 +3,8 @@ const path = require('path');
 
 let result;
 
+// Part 1
+
 try {
   const data = fs.readFileSync(path.resolve(__dirname + '/../day1-input.txt'), 'utf8');
   const array = data.split(/\r\n\r\n/).map(elem => {
@@ -18,4 +20,6 @@ try {
   console.error(e.stack);
 }
 
-module.exports = result;
+// Part 2 
+
+console.log(result[0] + result[1] + result[2]);
